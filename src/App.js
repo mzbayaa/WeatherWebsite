@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./Components/Navbar";
 import SecondNavbar from "./Components/SecondNavbar";
 import HomeNavbar from "./Components/HomeNavbar";
-import ScrollToTop from "./Components/ScrollToTop";
 import Home from "./Components/Pages/Home";
 import AboutUs from "./Components/Pages/AboutUs";
 import ContactUs from "./Components/Pages/ContactUs";
@@ -14,7 +13,6 @@ function App() {
   return (
     <>
       <Router>
-        <ScrollToTop />
         <HomeNavbar />
         {/* <Navbar />
         <SecondNavbar /> */}
