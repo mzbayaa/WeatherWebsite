@@ -64,6 +64,11 @@
   color: #8d8d8d;
 }
 
+.home-content > p {
+  color: red;
+  font-size: 1rem;
+}
+
 @media screen and (max-width: 960px) {
   .home-container > h1 {
     font-size: 70px;

@@ -88,6 +88,11 @@ header div,
   margin-left: auto;
 }
 
+.home-content > p {
+  color: red;
+  font-size: 0.65rem;
+}
+
 @media only screen and (max-width: 1024px) {
   header .nav-btn {
     visibility: visible;

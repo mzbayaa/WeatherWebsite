@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import axios from "axios";
+// import axios from "axios";
 import "./Weather.css";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
@@ -11,21 +11,21 @@ function Weather() {
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid=7e728a94fe47e49624e4376f631364d5
   `;
 
-  const searchLocation = (event) => {
-    if (event.key === "Enter") {
-      axios.get(url).then((response) => {
-        setData(response.data);
-        console.log(response.data);
-      });
-      setLocation("");
-    }
-  };
+  // const searchLocation = (event) => {
+  //   if (event.key === "Enter") {
+  //     axios.get(url).then((response) => {
+  //       setData(response.data);
+  //       console.log(response.data);
+  //     });
+  //     setLocation("");
+  //   }
+  // };
 
   return (
     <>
       <Navbar />
       <div className="app">
-        <div className="search">
+        {/* <div className="search">
           <input
             value={location}
             onChange={(event) => setLocation(event.target.value)}
@@ -33,7 +33,7 @@ function Weather() {
             placeholder="Enter Location"
             type="text"
           />
-        </div>
+        </div> */}
         <div className="container">
           <div className="top">
             <div className="location">
