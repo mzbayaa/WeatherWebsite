@@ -11,10 +11,10 @@ function Navbar() {
   return (
     <header>
       <a className="nav-logo" href="/">
-        Logo
+        WeatherCare Foundation
       </a>
       <div className="search-bar">
-        <input type="text" placeholder="Search" />
+        <input type="text" placeholder="Enter Location" />
         <button>
           <FaSearch />
         </button>

@@ -11,7 +11,7 @@ function HomeNavbar() {
   return (
     <header className="home-header">
       <a className="nav-logo" href="/">
-        Logo
+        WeatherCare Foundation
       </a>
       <nav className="main-nav" ref={navRef}>
         <a href="/">Home</a>
