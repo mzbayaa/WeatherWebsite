@@ -11,39 +11,49 @@ function News() {
         <h1 nameClass="news-title">News</h1>
         <div className="news-card">
           <img src="../Images/news1.jpeg" alt="News 1" className="news-image" />
-          <h3>News Title 1</h3>
+          <h3>Chaos Unleashed: Lightning Strikes, Fires Ignite</h3>
           <p className="news-date">June 28, 2023</p>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-            scelerisque semper sem at sodales. Fusce eget efficitur metus, nec
-            maximus mi.
+            Japan engulfed in chaos as unforgiving thunderstorm unleashes
+            lightning strikes, plunging neighborhoods into darkness, igniting
+            destructive fires, and emphasizing the urgent need for recovery.
           </p>
         </div>
         <div className="news-card">
           <img src="../Images/news2.jpeg" alt="News 2" className="news-image" />
-          <h3>News Title 2</h3>
+          <h3>
+            City in Deluge: Relentless Rain Triggers Chaos and Devastation
+          </h3>
           <p className="news-date">June 27, 2023</p>
           <p>
-            Duis ullamcorper, metus at tempus dapibus, velit turpis pharetra
-            nisi, sit amet volutpat leo nisl id purus.
+            Ottawa thrown into disarray as relentless rainfall floods streets,
+            submerges neighborhoods, and disrupts daily life, highlighting the
+            pressing need for recovery efforts to address the widespread water
+            damage and restore normalcy.
           </p>
         </div>
         <div className="news-card">
           <img src="../Images/news3.jpeg" alt="News 3" className="news-image" />
-          <h3>News Title 3</h3>
+          <h3>Tornado Devastation: Unleashing Chaos and Destruction"</h3>
           <p className="news-date">June 26, 2023</p>
           <p>
-            Sed tincidunt, nulla non congue commodo, metus ligula pellentesque
-            enim, ac pellentesque lectus arcu sed urna.
+            Italy paralyzed in mayhem as a relentless tornado unleashes its
+            fury, unleashing powerful winds that ravage everything in its path,
+            reducing buildings to rubble, uprooting trees, and leaving a trail
+            of destruction in its wake, amplifying the desperate plea for
+            recovery.
           </p>
         </div>
         <div className="news-card">
           <img src="../Images/news4.jpeg" alt="News 4" className="news-image" />
-          <h3>News Title 4</h3>
+          <h3>Snowstorm Siege: Blanketing the City in Winter's Embrace</h3>
           <p className="news-date">June 25, 2023</p>
           <p>
-            Sed tincidunt, nulla non congue commodo, metus ligula pellentesque
-            enim, ac pellentesque lectus arcu sed urna.
+            A captivating winter scene unfolds as a relentless snowstorm
+            blankets Sweden, transforming the landscape into a picturesque
+            wonderland. However, beneath the beauty lies the urgent need for
+            recovery as roads become hazardous and essential services are
+            disrupted.
           </p>
         </div>
       </div>

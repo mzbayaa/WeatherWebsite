@@ -1,14 +1,14 @@
 import React, { useState, useEffect, useRef } from "react";
 import axios from "axios";
 import "../../App.css";
-import { FaSearch } from "react-icons/fa";
 import "./Home.css";
 import "../HomeNavbar.css";
 import HomeNavbar from "../HomeNavbar";
+import { useNavigate } from "react-router";
 
 function Home() {
   const videoRef = useRef(null);
-
+  const navigate = useNavigate();
   useEffect(() => {
     if (videoRef.current) {
       videoRef.current.playbackRate = 0.75;
@@ -23,13 +23,15 @@ function Home() {
     if (event.key === "Enter") {
       try {
         const response = await axios.get(url);
-        setData(response.data);
-        console.log(response.data);
-        setError(null);
-      } catch (error) {
-        setError("Invalid location. Please try again.");
+        console.log(response);
+        if (response) {
+          navigate(`/weather?location=${location}`);
+        }
+      } catch {
+        setLocation("");
+        alert("Invalid Location");
+        console.log("error");
       }
-      setLocation("");
     }
   };
 
@@ -57,9 +59,6 @@ function Home() {
             placeholder="Enter Location"
             type="text"
           />
-          <button>
-            <FaSearch />
-          </button>
         </div>
         <div className="home-content">{error ? <p>{error}</p> : <h2></h2>}</div>
       </div>
