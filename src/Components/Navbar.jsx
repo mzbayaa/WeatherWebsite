@@ -12,10 +12,22 @@ function Navbar() {
 
   const [location, setLocation] = useState("");
   const navigate = useNavigate();
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid=7e728a94fe47e49624e4376f631364d5`;
+
   const searchLocation = async (event) => {
     if (event.key === "Enter") {
-      navigate(`/weather?location=${location}`);
-      setLocation("");
+      try {
+        const response = await axios.get(url);
+        console.log(response);
+        if (response) {
+          navigate(`/weather?location=${location}`);
+          setLocation("");
+        }
+      } catch {
+        setLocation("");
+        alert("Invalid Location");
+        console.log("error");
+      }
     }
   };
 

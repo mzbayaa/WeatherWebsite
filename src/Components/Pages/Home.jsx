@@ -8,16 +8,16 @@ import { useNavigate } from "react-router";
 
 function Home() {
   const videoRef = useRef(null);
-  const navigate = useNavigate();
+
   useEffect(() => {
     if (videoRef.current) {
       videoRef.current.playbackRate = 0.75;
     }
   }, []);
 
-  const [data, setData] = useState({});
   const [location, setLocation] = useState("");
-  const [error, setError] = useState(null);
+  const navigate = useNavigate();
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid=7e728a94fe47e49624e4376f631364d5`;
 
   const searchLocation = async (event) => {
     if (event.key === "Enter") {
@@ -34,8 +34,6 @@ function Home() {
       }
     }
   };
-
-  const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid=7e728a94fe47e49624e4376f631364d5`;
 
   return (
     <>
@@ -60,7 +58,6 @@ function Home() {
             type="text"
           />
         </div>
-        <div className="home-content">{error ? <p>{error}</p> : <h2></h2>}</div>
       </div>
     </>
   );
