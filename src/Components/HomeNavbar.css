@@ -21,35 +21,6 @@ header .nav-logo {
   text-decoration: none;
 }
 
-.search-bar {
-  display: flex;
-  align-items: center;
-  border-radius: 20px;
-  background-color: #fff;
-  padding: 5px;
-  width: 100%;
-  max-width: 300px;
-}
-
-.search-bar input {
-  padding: 5px;
-  border: none;
-  outline: none;
-  margin-right: 0.5rem;
-  border-radius: 20px;
-  width: 100%;
-  max-width: 300px;
-}
-
-.search-bar button {
-  padding: 5px;
-  cursor: pointer;
-  background: transparent;
-  border: none;
-  outline: none;
-  color: var(--textColor);
-}
-
 nav a {
   margin: 0 0.75rem;
   color: var(--textColor);
