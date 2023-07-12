@@ -5,6 +5,7 @@ import "./Home.css";
 import "../HomeNavbar.css";
 import HomeNavbar from "../HomeNavbar";
 import { useNavigate } from "react-router";
+import AddressAutocomplete from "../AddressAutocomplete";
 
 function Home() {
   const videoRef = useRef(null);
@@ -50,13 +51,14 @@ function Home() {
         <h1> WeatherCare Foundation</h1>
         <p>Showering the world with positivity</p>
         <div className="home-search-bar">
-          <input
+          {/* <input
             value={location}
             onChange={(event) => setLocation(event.target.value)}
             onKeyPress={searchLocation}
             placeholder="Enter Location"
             type="text"
-          />
+          /> */}
+          <AddressAutocomplete />
         </div>
       </div>
     </>

@@ -7,16 +7,20 @@ import { useSearchParams } from "react-router-dom";
 
 function Weather() {
   const [data, setData] = useState({});
+  const [coordinates, setCoordinates] = useState({ lat: null, lng: null });
   const [location, setLocation] = useState("");
   const [error, setError] = useState(null);
+
   let [searchParams, setSearchParams] = useSearchParams();
-  const url = `https://api.openweathermap.org/data/2.5/weather?q=${searchParams.get(
-    "location"
+  const url = `https://api.openweathermap.org/data/2.5/weather?lat=${searchParams.get(
+    "lat"
+  )}&lon=${searchParams.get(
+    "lon"
   )}&units=metric&appid=7e728a94fe47e49624e4376f631364d5
   `;
   useEffect(() => {
     const searchLocation = async (event) => {
-      if (searchParams.get("location")) {
+      if (searchParams.get("lat") && searchParams.get("lon")) {
         try {
           const response = await axios.get(url);
           setData(response.data);
@@ -30,7 +34,7 @@ function Weather() {
     };
     searchLocation();
     console.log(searchParams.get("location"));
-  }, [searchParams.get("location")]);
+  }, [searchParams, url]);
 
   return (
     <>

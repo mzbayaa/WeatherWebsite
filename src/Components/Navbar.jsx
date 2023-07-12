@@ -3,6 +3,7 @@ import axios from "axios";
 import { FaBars, FaTimes } from "react-icons/fa";
 import "./Navbar.css";
 import { useNavigate } from "react-router";
+import AddressAutocomplete from "./AddressAutocomplete";
 
 function Navbar() {
   const navRef = useRef();
@@ -37,13 +38,15 @@ function Navbar() {
         WeatherCare Foundation
       </a>
       <div className="search-bar">
-        <input
+        {/* <input
           value={location}
           onChange={(event) => setLocation(event.target.value)}
           onKeyPress={searchLocation}
           placeholder="Enter Location"
           type="text"
-        />
+        /> */}
+
+        <AddressAutocomplete />
       </div>
       <nav className="main-nav" ref={navRef}>
         <a href="/">Home</a>
