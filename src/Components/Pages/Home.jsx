@@ -6,8 +6,10 @@ import "../HomeNavbar.css";
 import HomeNavbar from "../HomeNavbar";
 import { useNavigate } from "react-router";
 import AddressAutocomplete from "../AddressAutocomplete";
+import { useTranslation } from "react-i18next";
 
 function Home() {
+  const { t, i18n } = useTranslation();
   const videoRef = useRef(null);
 
   useEffect(() => {
@@ -49,15 +51,8 @@ function Home() {
           muted
         />
         <h1> WeatherCare Foundation</h1>
-        <p>Showering the world with positivity</p>
+        <p>{t("slogan")}</p>
         <div className="home-search-bar">
-          {/* <input
-            value={location}
-            onChange={(event) => setLocation(event.target.value)}
-            onKeyPress={searchLocation}
-            placeholder="Enter Location"
-            type="text"
-          /> */}
           <AddressAutocomplete />
         </div>
       </div>

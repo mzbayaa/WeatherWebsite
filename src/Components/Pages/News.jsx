@@ -2,59 +2,38 @@ import React from "react";
 import "./News.css";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
+import { useTranslation } from "react-i18next";
 
 function News() {
+  const { t, i18n } = useTranslation();
   return (
     <>
       <Navbar />
       <div className="news-container">
-        <h1 nameClass="news-title">News</h1>
+        <h1 nameClass="news-title">{t("News")}</h1>
         <div className="news-card">
           <img src="../Images/news1.jpeg" alt="News 1" className="news-image" />
-          <h3>Chaos Unleashed: Lightning Strikes, Fires Ignite</h3>
-          <p className="news-date">June 28, 2023</p>
-          <p>
-            Japan engulfed in chaos as unforgiving thunderstorm unleashes
-            lightning strikes, plunging neighborhoods into darkness, igniting
-            destructive fires, and emphasizing the urgent need for recovery.
-          </p>
+          <h3>{t("title1")}</h3>
+          <p className="news-date">{t("date1")}</p>
+          <p>{t("news1")}</p>
         </div>
         <div className="news-card">
           <img src="../Images/news2.jpeg" alt="News 2" className="news-image" />
-          <h3>
-            City in Deluge: Relentless Rain Triggers Chaos and Devastation
-          </h3>
-          <p className="news-date">June 27, 2023</p>
-          <p>
-            Ottawa thrown into disarray as relentless rainfall floods streets,
-            submerges neighborhoods, and disrupts daily life, highlighting the
-            pressing need for recovery efforts to address the widespread water
-            damage and restore normalcy.
-          </p>
+          <h3>{t("title2")}</h3>
+          <p className="news-date">{t("date2")}</p>
+          <p>{t("news2")}</p>
         </div>
         <div className="news-card">
           <img src="../Images/news3.jpeg" alt="News 3" className="news-image" />
-          <h3>Tornado Devastation: Unleashing Chaos and Destruction"</h3>
-          <p className="news-date">June 26, 2023</p>
-          <p>
-            Italy paralyzed in mayhem as a relentless tornado unleashes its
-            fury, unleashing powerful winds that ravage everything in its path,
-            reducing buildings to rubble, uprooting trees, and leaving a trail
-            of destruction in its wake, amplifying the desperate plea for
-            recovery.
-          </p>
+          <h3>{t("title3")}</h3>
+          <p className="news-date">{t("date3")}</p>
+          <p>{t("news3")}</p>
         </div>
         <div className="news-card">
           <img src="../Images/news4.jpeg" alt="News 4" className="news-image" />
-          <h3>Snowstorm Siege: Blanketing the City in Winter's Embrace</h3>
-          <p className="news-date">June 25, 2023</p>
-          <p>
-            A captivating winter scene unfolds as a relentless snowstorm
-            blankets Sweden, transforming the landscape into a picturesque
-            wonderland. However, beneath the beauty lies the urgent need for
-            recovery as roads become hazardous and essential services are
-            disrupted.
-          </p>
+          <h3>{t("title4")}</h3>
+          <p className="news-date">{t("date4")}</p>
+          <p>{t("news4")}</p>
         </div>
       </div>
       <Footer />

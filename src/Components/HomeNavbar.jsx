@@ -1,8 +1,10 @@
 import { useRef } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import "./HomeNavbar.css";
+import { useTranslation } from "react-i18next";
 
 function HomeNavbar() {
+  const { t, i18n } = useTranslation();
   const navRef = useRef();
   const showNavbar = () => {
     navRef.current.classList.toggle("responsive_nav");
@@ -14,10 +16,10 @@ function HomeNavbar() {
         WeatherCare Foundation
       </a>
       <nav className="main-nav" ref={navRef}>
-        <a href="/">Home</a>
-        <a href="/about-us">About Us</a>
-        <a href="/contact-us">Contact Us</a>
-        <a href="/news">News</a>
+        <a href="/">{t("Home")}</a>
+        <a href="/about-us">{t("AboutUs")}</a>
+        <a href="/contact-us">{t("ContactUs")}</a>
+        <a href="/news">{t("News")}</a>
         <button className="nav-btn nav-close-btn" onClick={showNavbar}>
           <FaTimes />
         </button>

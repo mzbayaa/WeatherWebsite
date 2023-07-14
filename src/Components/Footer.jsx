@@ -1,33 +1,35 @@
 import React from "react";
 import "./Footer.css";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+  const { t, i18n } = useTranslation();
   return (
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-left">
           <h4>WeatherCare Foundation</h4>
-          <p>Showering the world with positivity</p>
+          <p>{t("slogan")}</p>
         </div>
         <div className="footer-right">
           <ul className="footer-links">
             <li>
-              <a href="/">Home</a>
+              <a href="/">{t("Home")}</a>
             </li>
             <li>
-              <a href="/about-us">About Us</a>
+              <a href="/about-us">{t("AboutUs")}</a>
             </li>
             <li>
-              <a href="/contact-us">Contact Us</a>
+              <a href="/contact-us">{t("ContactUs")}</a>
             </li>
             <li>
-              <a href="/news">News</a>
+              <a href="/news">{t("News")}</a>
             </li>
           </ul>
         </div>
       </div>
       <div className="footer-bottom">
-        <p>&copy; 2023 WeatherCare Foundation. All rights reserved.</p>
+        <p>&copy; {t("reservedrights")}</p>
       </div>
     </footer>
   );

@@ -4,8 +4,10 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import "./Navbar.css";
 import { useNavigate } from "react-router";
 import AddressAutocomplete from "./AddressAutocomplete";
+import { useTranslation } from "react-i18next";
 
 function Navbar() {
+  const { t, i18n } = useTranslation();
   const navRef = useRef();
   const showNavbar = () => {
     navRef.current.classList.toggle("responsive_nav");
@@ -38,21 +40,13 @@ function Navbar() {
         WeatherCare Foundation
       </a>
       <div className="search-bar">
-        {/* <input
-          value={location}
-          onChange={(event) => setLocation(event.target.value)}
-          onKeyPress={searchLocation}
-          placeholder="Enter Location"
-          type="text"
-        /> */}
-
         <AddressAutocomplete />
       </div>
       <nav className="main-nav" ref={navRef}>
-        <a href="/">Home</a>
-        <a href="/about-us">About Us</a>
-        <a href="/contact-us">Contact Us</a>
-        <a href="/news">News</a>
+        <a href="/">{t("Home")}</a>
+        <a href="/about-us">{t("AboutUs")}</a>
+        <a href="/contact-us">{t("ContactUs")}</a>
+        <a href="/news">{t("News")}</a>
         <button className="nav-btn nav-close-btn" onClick={showNavbar}>
           <FaTimes />
         </button>

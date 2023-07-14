@@ -1,0 +1,42 @@
+{
+  "Home": "Home",
+  "slogan": "Showering the world with positivity",
+  "locationplaceholder": "Enter Location",
+
+  "AboutUs": "About Us",
+  "about1": "The WeatherCare Foundation is a non-profit organization dedicated to providing accurate and reliable weather information to communities around the world. We believe that access to up-to-date weather data is crucial for individuals, businesses, and organizations to make informed decisions and take necessary precautions to ensure their safety and well-being.",
+  "about2": "Our mission is to make weather information accessible and easy to understand for everyone. Through our website and mobile applications, we provide real-time weather updates, forecasts, and other related services. Our team of meteorologists and weather enthusiasts work tirelessly to deliver the most reliable and precise weather information to our users.",
+  "about3": "At WeatherCare Foundation, we are driven by a passion for weather and a commitment to public service. We strive to empower individuals and communities with the knowledge they need to prepare for various weather conditions, including severe weather events. We also collaborate with government agencies, educational institutions, and other organizations to promote weather literacy and enhance preparedness measures.",
+  "about4": "We invite you to explore our website, use our weather services, and join us in our mission to create a weather-resilient world. Together, we can make a difference and ensure the safety and well-being of people everywhere.",
+
+  "ContactUs": "Contact Us",
+  "contact1": "Thank you for your interest in WeatherCare Foundation. If you have any questions, feedback, or inquiries, please feel free to reach out to us using the contact information below or by filling out the form. We value your input and will get back to you as soon as possible.",
+  "address": "Address:",
+  "address1": "123 Weather Street, City, Country",
+  "email": "Email:",
+  "phone": "Phone:",
+  "nameplaceholder": "Your Name",
+  "emailplaceholder": "Your Email",
+  "messageplaceholder": "Message",
+  "sendbutton": "Send Message",
+
+  "News": "News",
+  "title1": "Chaos Unleashed: Lightning Strikes, Fires Ignite",
+  "date1": "June 28, 2023",
+  "news1": "Japan engulfed in chaos as unforgiving thunderstorm unleashes lightning strikes, plunging neighborhoods into darkness, igniting destructive fires, and emphasizing the urgent need for recovery.",
+  "title2": "City in Deluge: Relentless Rain Triggers Chaos and Devastation",
+  "date2": "June 27, 2023",
+  "news2": "Ottawa thrown into disarray as relentless rainfall floods streets, submerges neighborhoods, and disrupts daily life, highlighting the pressing need for recovery efforts to address the widespread water damage and restore normalcy.",
+  "title3": "Tornado Devastation: Unleashing Chaos and Destruction",
+  "date3": "June 26, 2023",
+  "news3": "Italy paralyzed in mayhem as a relentless tornado unleashes its fury, unleashing powerful winds that ravage everything in its path, reducing buildings to rubble, uprooting trees, and leaving a trail of destruction in its wake, amplifying the desperate plea for recovery.",
+  "title4": "Snowstorm Siege: Blanketing the City in Winter's Embrace",
+  "date4": "June 25, 2023",
+  "news4": "A captivating winter scene unfolds as a relentless snowstorm blankets Sweden, transforming the landscape into a picturesque wonderland. However, beneath the beauty lies the urgent need for recovery as roads become hazardous and essential services are disrupted.",
+
+  "feelslike": "Feels Like",
+  "humidity": "Humidity",
+  "windspeed": "Wind Speed",
+
+  "reservedrights": "2023 WeatherCare Foundation. All rights reserved."
+}

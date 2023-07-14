@@ -4,8 +4,10 @@ import "./Weather.css";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
 import { useSearchParams } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 function Weather() {
+  const { t, i18n } = useTranslation();
   const [data, setData] = useState({});
   const [coordinates, setCoordinates] = useState({ lat: null, lng: null });
   const [location, setLocation] = useState("");
@@ -58,19 +60,19 @@ function Weather() {
                 {data.main ? (
                   <p className="bold">{data.main.feels_like.toFixed()}°C</p>
                 ) : null}
-                <p>Feels Like</p>
+                <p>{t("feelslike")}</p>
               </div>
               <div>
                 {data.main ? (
                   <p className="bold">{data.main.humidity}%</p>
                 ) : null}
-                <p>Humidity</p>
+                <p>{t("humidity")}</p>
               </div>
               <div>
                 {data.wind ? (
                   <p className="bold">{data.wind.speed.toFixed()} Km/H</p>
                 ) : null}
-                <p>Wind Speed</p>
+                <p>{t("windspeed")}</p>
               </div>
             </div>
           )}

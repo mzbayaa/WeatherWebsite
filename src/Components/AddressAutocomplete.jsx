@@ -5,8 +5,10 @@ import PlacesAutocomplete, {
 } from "react-places-autocomplete";
 import { useNavigate } from "react-router";
 import "./AddressAutocomplete.css";
+// import { useTranslation } from "react-i18next";
 
 const AddressAutocomplete = () => {
+  // const { t, i18n } = useTranslation();
   const navigate = useNavigate();
   const [address, setAddress] = useState("");
 

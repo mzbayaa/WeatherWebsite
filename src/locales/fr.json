@@ -1,0 +1,42 @@
+{
+  "Home": "Acceuil",
+  "slogan": "Inondez le monde de positivité",
+  "locationplaceholder": "Entrez L'emplacement",
+
+  "AboutUs": "À Propos de Nous",
+  "about1": "La WeatherCare Foundation est une organisation à but non lucratif dédiée à fournir des informations météorologiques précises et fiables aux communautés du monde entier. Nous pensons que l'accès à des données météorologiques à jour est crucial pour que les particuliers, les entreprises et les organisations puissent prendre des décisions éclairées et prendre les précautions nécessaires pour assurer leur sécurité et leur bien-être.",
+  "about2": "Notre mission est de rendre les informations météorologiques accessibles et faciles à comprendre pour tous. Grâce à notre site Web et à nos applications mobiles, nous fournissons des mises à jour météorologiques en temps réel, des prévisions et d'autres services connexes. Notre équipe de météorologues et de passionnés de la météo travaille sans relâche pour fournir le les informations météorologiques les plus fiables et les plus précises à nos utilisateurs.",
+  "about3": "Chez WeatherCare Foundation, nous sommes animés par une passion pour la météo et un engagement envers le service public. Nous nous efforçons de donner aux individus et aux communautés les connaissances dont ils ont besoin pour se préparer à diverses conditions météorologiques, y compris les phénomènes météorologiques violents. Nous collaborons également avec des agences gouvernementales. , des établissements d'enseignement et d'autres organisations pour promouvoir les connaissances météorologiques et améliorer les mesures de préparation.",
+  "about4": "Nous vous invitons à explorer notre site Web, à utiliser nos services météorologiques et à nous rejoindre dans notre mission de créer un monde résistant aux intempéries. Ensemble, nous pouvons faire la différence et assurer la sécurité et le bien-être des personnes partout dans le monde.",
+
+  "ContactUs": "Contactez-Nous",
+  "contact1": "Merci de l'intérêt que vous portez à WeatherCare Foundation. Si vous avez des questions, des commentaires ou des demandes de renseignements, n'hésitez pas à nous contacter en utilisant les coordonnées ci-dessous ou en remplissant le formulaire. Nous apprécions votre contribution et vous répondrons vous dès que possible.",
+  "address": "Addresse:",
+  "address1": "123 Rue Météo, Ville, Pays",
+  "email": "Courriel:",
+  "phone": "Téléphone:",
+  "nameplaceholder": "Votre Nom",
+  "emailplaceholder": "Votre Courriel",
+  "messageplaceholder": "Message",
+  "sendbutton": "Envoyer Message",
+
+  "News": "Nouvelles",
+  "title1": "Chaos déchaîné: Coups de foudre, les incendies s'enflamment",
+  "date1": "28 Juin 2023",
+  "news1": "Le Japon est plongé dans le chaos alors qu'un orage impitoyable déclenche des éclairs, plongeant les quartiers dans l'obscurité, déclenchant des incendies destructeurs et soulignant le besoin urgent de reprise.",
+  "title2": "Ville on Deluge: Relentless Rain Triggers Chaos and Devastation",
+  "date2": "27 Juin 2023",
+  "news2": "Ottawa est plongée dans le désarroi alors que des pluies incessantes inondent les rues, submergent les quartiers et perturbent la vie quotidienne, soulignant le besoin urgent d'efforts de rétablissement pour remédier aux dégâts d'eau généralisés et rétablir la normalité.",
+  "title3": "Dévastation par une tornade : déchaîner le chaos et la destruction",
+  "date3": "26 Juin 2023",
+  "news3": "L'Italie paralysée par le chaos alors qu'une tornade implacable déchaîne sa fureur, libérant des vents puissants qui ravagent tout sur son passage, réduisant les bâtiments en décombres, déracinant les arbres et laissant une traînée de destruction dans son sillage, amplifiant l'appel désespéré à la reprise.",
+  "title4": "Siège de la tempête de neige: Couverture de la ville dans l'étreinte de l'hiver",
+  "date4": "25 Juin 2023",
+  "news4": "Une scène hivernale captivante se déroule alors qu'une tempête de neige implacable couvre la Suède, transformant le paysage en un pays des merveilles pittoresque. Cependant, sous la beauté se cache le besoin urgent de reprise alors que les routes deviennent dangereuses et que les services essentiels sont perturbés.",
+
+  "feelslike": "Ressentie",
+  "humidity": "Humidité",
+  "windspeed": "Vents",
+
+  "reservedrights": "2023 WeatherCare Foundation. Droits réservés."
+}
