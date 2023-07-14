@@ -63,3 +63,8 @@ h1 {
 .bold {
   font-weight: 700;
 }
+
+img {
+  width: 100px;
+  height: 100px;
+}

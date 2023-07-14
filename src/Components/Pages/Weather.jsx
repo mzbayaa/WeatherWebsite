@@ -18,10 +18,10 @@ function Weather() {
     "lat"
   )}&lon=${searchParams.get(
     "lon"
-  )}&units=metric&appid=7e728a94fe47e49624e4376f631364d5
-  `;
+  )}&units=metric&appid=7e728a94fe47e49624e4376f631364d5`;
+
   useEffect(() => {
-    const searchLocation = async (event) => {
+    const searchLocation = async () => {
       if (searchParams.get("lat") && searchParams.get("lon")) {
         try {
           const response = await axios.get(url);
@@ -34,9 +34,29 @@ function Weather() {
         setLocation("");
       }
     };
+
     searchLocation();
     console.log(searchParams.get("location"));
   }, [searchParams, url]);
+
+  const weatherIcons = {
+    Clouds: "../Images/clouds.png",
+    Clear: "../Images/clear.png",
+    Mist: "../Images/hazy.png",
+    Drizzle: "../Images/hazy.png",
+    Rain: "../Images/rain.png",
+    Thunderstorm: "../Images/lightning.png",
+    Snow: "../Images/snow.png",
+    Tornado: "../Images/tornado.png",
+  };
+
+  const getWeatherIcon = (weather) => {
+    const icon = weatherIcons[weather];
+    if (icon) {
+      return <img src={`/icons/${icon}`} alt={weather} />;
+    }
+    return null;
+  };
 
   return (
     <>
@@ -48,10 +68,19 @@ function Weather() {
               <p>{data.name}</p>
             </div>
             <div>
-              {data.main ? <h1>{data.main.temp.toFixed()}°C</h1> : null}
+              {data.main ? (
+                <h1>
+                  {data.main.temp.toFixed()}°C{" "}
+                  {getWeatherIcon(data.weather[0].main)}
+                </h1>
+              ) : null}
             </div>
             <div className="description">
-              {data.weather ? <p>{data.weather[0].main}</p> : null}
+              {data.weather ? (
+                <>
+                  <p>{data.weather[0].main}</p>
+                </>
+              ) : null}
             </div>
           </div>
           {data.name !== undefined && (
