@@ -12,7 +12,9 @@ export default function LanguageSwitch() {
 
   return (
     <div>
-      <button onClick={handleLanguageSwitch}>en/fr</button>
+      <button className="switch-button" onClick={handleLanguageSwitch}>
+        en/fr
+      </button>
     </div>
   );
 }

@@ -5,10 +5,8 @@ import PlacesAutocomplete, {
 } from "react-places-autocomplete";
 import { useNavigate } from "react-router";
 import "./AddressAutocomplete.css";
-// import { useTranslation } from "react-i18next";
 
 const AddressAutocomplete = () => {
-  // const { t, i18n } = useTranslation();
   const navigate = useNavigate();
   const [address, setAddress] = useState("");
 
@@ -36,7 +34,7 @@ const AddressAutocomplete = () => {
             <input {...getInputProps({ placeholder: "Enter Location" })} />
             <div className="list-style">
               {loading ? <div>Loading...</div> : null}
-              {suggestions.map((suggestion, index) => {
+              {suggestions.slice(0, 5).map((suggestion, index) => {
                 const style = {
                   backgroundColor: suggestion.active ? "#f5f5f5" : "#ffffff",
                 };

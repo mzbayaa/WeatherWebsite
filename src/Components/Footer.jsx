@@ -9,14 +9,13 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-left">
-          <h4>WeatherCare Foundation</h4>
+          <a href="/" className="footer-logo">
+            WeatherCare Foundation
+          </a>
           <p>{t("slogan")}</p>
         </div>
         <div className="footer-right">
           <ul className="footer-links">
-            <li>
-              <a href="/">{t("Home")}</a>
-            </li>
             <li>
               <a href="/about-us">{t("AboutUs")}</a>
             </li>

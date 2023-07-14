@@ -25,28 +25,28 @@ function News() {
   const newsData = [
     {
       id: "1",
-      image: "../Images/news1.jpeg",
+      image: "/Images/news1.jpeg",
       title: t("title1"),
       date: t("date1"),
       content: t("news1"),
     },
     {
       id: "2",
-      image: "../Images/news2.jpeg",
+      image: "/Images/news2.jpeg",
       title: t("title2"),
       date: t("date2"),
       content: t("news2"),
     },
     {
       id: "3",
-      image: "../Images/news3.jpeg",
+      image: "/Images/news3.jpeg",
       title: t("title3"),
       date: t("date3"),
       content: t("news3"),
     },
     {
       id: "4",
-      image: "../Images/news4.jpeg",
+      image: "/Images/news4.jpeg",
       title: t("title4"),
       date: t("date4"),
       content: t("news4"),
@@ -64,19 +64,19 @@ function News() {
             className={filter === "All" ? "active" : ""}
             onClick={() => handleFilterChange("All")}
           >
-            All
+            {t("all")}
           </button>
           <button
             className={filter === "id>2" ? "active" : ""}
             onClick={() => handleFilterChange("id>2")}
           >
-            Old
+            {t("old")}
           </button>
           <button
             className={filter === "id<=2" ? "active" : ""}
             onClick={() => handleFilterChange("id<=2")}
           >
-            New
+            {t("new")}
           </button>
         </div>
 

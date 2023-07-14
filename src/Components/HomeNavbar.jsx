@@ -17,7 +17,6 @@ function HomeNavbar() {
         WeatherCare Foundation
       </a>
       <nav className="home-main-nav" ref={navRef}>
-        {/* <a href="/">{t("Home")}</a> */}
         <a href="/about-us">{t("AboutUs")}</a>
         <a href="/contact-us">{t("ContactUs")}</a>
         <a href="/news">{t("News")}</a>

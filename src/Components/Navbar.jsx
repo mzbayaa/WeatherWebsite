@@ -44,7 +44,6 @@ function Navbar() {
         <AddressAutocomplete />
       </div>
       <nav className="main-nav" ref={navRef}>
-        {/* <a href="/">{t("Home")}</a> */}
         <a href="/about-us">{t("AboutUs")}</a>
         <a href="/contact-us">{t("ContactUs")}</a>
         <a href="/news">{t("News")}</a>
