@@ -1,6 +1,7 @@
 import React from "react";
 import "./Footer.css";
 import { useTranslation } from "react-i18next";
+import LanguageSwitch from "./LanguageSwitch";
 
 const Footer = () => {
   const { t, i18n } = useTranslation();
@@ -24,6 +25,9 @@ const Footer = () => {
             </li>
             <li>
               <a href="/news">{t("News")}</a>
+            </li>
+            <li>
+              <LanguageSwitch />
             </li>
           </ul>
         </div>

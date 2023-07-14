@@ -17,8 +17,8 @@ const AddressAutocomplete = () => {
     try {
       const results = await geocodeByAddress(selectedAddress);
       const { lat, lng } = await getLatLng(results[0]);
-
       navigate(`/weather?lat=${lat}&lon=${lng}`);
+      setAddress("");
     } catch (error) {
       console.log("Error", error);
     }

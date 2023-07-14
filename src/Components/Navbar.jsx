@@ -5,6 +5,7 @@ import "./Navbar.css";
 import { useNavigate } from "react-router";
 import AddressAutocomplete from "./AddressAutocomplete";
 import { useTranslation } from "react-i18next";
+import LanguageSwitch from "./LanguageSwitch";
 
 function Navbar() {
   const { t, i18n } = useTranslation();
@@ -43,13 +44,14 @@ function Navbar() {
         <AddressAutocomplete />
       </div>
       <nav className="main-nav" ref={navRef}>
-        <a href="/">{t("Home")}</a>
+        {/* <a href="/">{t("Home")}</a> */}
         <a href="/about-us">{t("AboutUs")}</a>
         <a href="/contact-us">{t("ContactUs")}</a>
         <a href="/news">{t("News")}</a>
         <button className="nav-btn nav-close-btn" onClick={showNavbar}>
           <FaTimes />
         </button>
+        <LanguageSwitch />
       </nav>
       <button className="nav-btn" onClick={showNavbar}>
         <FaBars />
