@@ -41,5 +41,7 @@
   "humidity": "Humidity",
   "windspeed": "Wind Speed",
 
+  "weeksforecast": "Week's Forecast",
+
   "reservedrights": "2023 WeatherCare Foundation. All rights reserved."
 }

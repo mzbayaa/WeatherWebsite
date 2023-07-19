@@ -53,10 +53,20 @@ function Weather() {
   const getWeatherIcon = (weather) => {
     const icon = weatherIcons[weather];
     if (icon) {
-      return <img src={`/icons/${icon}`} alt={weather} />;
+      return (
+        <img className="icon-image" src={`/icons/${icon}`} alt={weather} />
+      );
     }
     return null;
   };
+
+  // const getDayOfWeek = (offset) => {
+  //   const today = new Date();
+  //   const dayOfWeek = today.getDay();
+  //   const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  //   const nextDayIndex = (dayOfWeek + offset) % 7;
+  //   return days[nextDayIndex];
+  // };
 
   return (
     <>
@@ -105,6 +115,34 @@ function Weather() {
               </div>
             </div>
           )}
+          <div className="week-forecast">
+            {t("weeksforecast")}
+            <hr
+              style={{
+                background: "white",
+                color: "white",
+                borderColor: "white",
+                height: "5px",
+              }}
+            />
+            {/* <div className="forecast-cards">
+              {data.name !== undefined &&
+                data.weather &&
+                Array.from({ length: 7 }).map((_, index) => {
+                  const dayOffset = index === 0 ? 0 : index - 1;
+                  const dayData = data.weather[dayOffset];
+                  const dayOfWeek = getDayOfWeek(dayOffset);
+                  return (
+                    <WeekForecastCard
+                      key={index}
+                      day={dayOfWeek}
+                      temperature={dayData.temperature}
+                      weather={dayData.weather}
+                    />
+                  );
+                })}
+            </div> */}
+          </div>
         </div>
       </div>
       <Footer />

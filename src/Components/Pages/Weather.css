@@ -1,6 +1,6 @@
 .container {
   width: 100%;
-  height: 100vh;
+  height: 150vh;
   position: relative;
   color: #fff;
 }
@@ -46,7 +46,6 @@
   text-align: center;
   width: 100%;
   margin: 1rem auto;
-  margin-bottom: 15rem;
   padding: 1rem;
   border-radius: 12px;
   background-color: rgba(255, 255, 255, 0.2);
@@ -64,7 +63,12 @@ h1 {
   font-weight: 700;
 }
 
-img {
+.icon-image {
   width: 100px;
   height: 100px;
+}
+
+.week-forecast {
+  margin-top: 1rem;
+  font-size: 20px;
 }
