@@ -41,13 +41,15 @@
 }
 
 .details {
-  display: flex;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 3rem;
   text-align: center;
   width: 100%;
   margin: 1rem auto;
   padding: 1rem;
-  border-radius: 12px;
+  border-radius: 15px;
   background-color: rgba(255, 255, 255, 0.2);
 }
 
@@ -66,9 +68,4 @@ h1 {
 .icon-image {
   width: 100px;
   height: 100px;
-}
-
-.week-forecast {
-  margin-top: 1rem;
-  font-size: 20px;
 }

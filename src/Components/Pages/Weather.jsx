@@ -59,15 +59,6 @@ function Weather() {
     }
     return null;
   };
-
-  // const getDayOfWeek = (offset) => {
-  //   const today = new Date();
-  //   const dayOfWeek = today.getDay();
-  //   const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-  //   const nextDayIndex = (dayOfWeek + offset) % 7;
-  //   return days[nextDayIndex];
-  // };
-
   return (
     <>
       <Navbar />
@@ -78,7 +69,7 @@ function Weather() {
               <p>{data.name}</p>
             </div>
             <div>
-              {data.main ? (
+              {data.main && data.weather ? (
                 <h1>
                   {data.main.temp.toFixed()}°C{" "}
                   {getWeatherIcon(data.weather[0].main)}
@@ -93,56 +84,34 @@ function Weather() {
               ) : null}
             </div>
           </div>
-          {data.name !== undefined && (
+          {data.name !== undefined && data.main ? (
             <div className="details">
               <div>
-                {data.main ? (
-                  <p className="bold">{data.main.feels_like.toFixed()}°C</p>
-                ) : null}
+                <p className="bold">{data.main.feels_like?.toFixed()}°C</p>
                 <p>{t("feelslike")}</p>
               </div>
               <div>
-                {data.main ? (
-                  <p className="bold">{data.main.humidity}%</p>
-                ) : null}
+                <p className="bold">{data.main.humidity?.toFixed()}%</p>
                 <p>{t("humidity")}</p>
               </div>
               <div>
-                {data.wind ? (
-                  <p className="bold">{data.wind.speed.toFixed()} Km/H</p>
-                ) : null}
+                <p className="bold">{data.wind?.speed?.toFixed()} Km/H</p>
                 <p>{t("windspeed")}</p>
               </div>
+              <div>
+                <p className="bold">{data.main.temp_min?.toFixed()}°C</p>
+                <p>{t("temp_min")}</p>
+              </div>
+              <div>
+                <p className="bold">{data.main.temp_max?.toFixed()}°C</p>
+                <p>{t("temp_max")}</p>
+              </div>
+              <div>
+                <p className="bold">{data.main.pressure?.toFixed()} hPa</p>
+                <p>{t("pressure")}</p>
+              </div>
             </div>
-          )}
-          <div className="week-forecast">
-            {t("weeksforecast")}
-            <hr
-              style={{
-                background: "white",
-                color: "white",
-                borderColor: "white",
-                height: "5px",
-              }}
-            />
-            {/* <div className="forecast-cards">
-              {data.name !== undefined &&
-                data.weather &&
-                Array.from({ length: 7 }).map((_, index) => {
-                  const dayOffset = index === 0 ? 0 : index - 1;
-                  const dayData = data.weather[dayOffset];
-                  const dayOfWeek = getDayOfWeek(dayOffset);
-                  return (
-                    <WeekForecastCard
-                      key={index}
-                      day={dayOfWeek}
-                      temperature={dayData.temperature}
-                      weather={dayData.weather}
-                    />
-                  );
-                })}
-            </div> */}
-          </div>
+          ) : null}
         </div>
       </div>
       <Footer />

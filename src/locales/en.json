@@ -40,6 +40,12 @@
   "feelslike": "Feels Like",
   "humidity": "Humidity",
   "windspeed": "Wind Speed",
+  "temp_min": "High",
+  "temp_max": "Low",
+  "pressure": "Pressure",
+  "sea_level": "Sea Level",
+  "grnd_level": "Ground Level",
+  "gust": "Gust",
 
   "weeksforecast": "Week's Forecast",
 

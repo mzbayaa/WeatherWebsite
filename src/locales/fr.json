@@ -40,6 +40,12 @@
   "feelslike": "Ressentie",
   "humidity": "Humidité",
   "windspeed": "Vents",
+  "temp_min": "Haut",
+  "temp_max": "Bas",
+  "pressure": "Pression",
+  "sea_level": "Niveaux de la Mer",
+  "grnd_level": "Niveaux du Sol",
+  "gust": "Rafale",
 
   "weeksforecast": "Prévisions de la Semaine",
 
